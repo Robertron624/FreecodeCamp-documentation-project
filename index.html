@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - frecodecamp DOCUMENTATION -PAGE proyect</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+
+
+  <nav id="navbar">
+    <header><img
+        src="data:image/png;base64,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"
+        id="py-logo"></img>Python Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#What_is_python">What is Python</a></li>
+
+
+      <li><a class="nav-link" href="#What_do_you_need">What do you need</a></li>
+
+
+      <li><a class="nav-link" href="#Python_and_other_languages">Python and other languages</a></li>
+
+
+      <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+
+      <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+
+      <li><a class="nav-link" href="#Variable_scopes">Variable scopes</a></li>
+
+      <li><a class="nav-link" href="#Data_types">Data types</a></li>
+
+      <li><a class="nav-link" href="#Function_declaration">Function declaration</a></li>
+
+      <li><a class="nav-link" href="#If...elif...else_statements">If...elif...else statements</a></li>
+
+      <li><a class="nav-link" href="#For_loops">For loops</a></li>
+
+      <li><a class="nav-link" href="#While_loops">While loops</a></li>
+
+      <li><a class="nav-link" href="#References">References</a></li>
+
+    </ul>
+
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="What_is_python">
+      <header>What is Python</header>
+      <article>
+        <p>
+          Python is a highly popular interpreted, high level and general-purpose programming language. It was designed
+          with an emphasis on code readability(code that is easy to understand for humans) and help programmers to write
+          clear, easy to write and logical code for small and large scale projects.
+        </p>
+        <p>
+          Python is a dynamically-typed language wich means that unlike other languages like C or Java it doesn't
+          require the explicit declaration of the type of a variable before using it, because it's type is checked
+          during run-time.
+          One of Python biggest feature is that there is a large number of libraries ready to install that extend it's
+          functions, because of that Python as a ton of applications, here is a list of his most common uses:
+        </p>
+        <ul>
+          <li><b>Web development: </b>Python offers multiple tools for back-end web development such as the frameworks:
+            Django, Flask and Pyramid, this tools simplify tasks like content management and database interactions.</li>
+          <li><b>Game development: </b>Python is loaded with many useful libraries that are useful for game development
+            like Pygame, Pyglet and PyOpengl.</li>
+          <li><b>Scientific investigation: </b>Thanks to his huge number of libraries Python is one of the must used
+            programming language to analyse and process scientific data with libraries such as: Pandas, NumPy and SciPy.
+          </li>
+          <li><b>AI and machine learning:</b>Python is the de facto programming language to create and train machine
+            learning and AI models with libraries like: Keras, TensorFlow, PyTorch and Pandas.
+          </li>
+
+          <li><b>Web-scrapping: </b>Python is a wonderful tool for extracting large amounts of data from web pages like
+            product prices and job listings wich can be used for market analysis and Search Engine Optimization.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="What_do_you_need">
+      <header>What do you need</header>
+      <article>
+        <p>Before you can start coding in Python you need some things: </p>
+        <ul>
+          <li>Dowmload the latest version of Python from it's official web page. <a
+              href="https://www.python.org/downloads/">Click here </a>to go there</li>
+          <li>An IDLE(Integrated DeveLopment Environment) to make it easier for you to write and test your code. My
+            favorites are <a href="https://code.visualstudio.com/">VS code</a>, <a
+              href="https://www.jetbrains.com/es-es/pycharm/">Pycharm</a> and <a href="https://atom.io/">Atom</a>.</li>
+          <li>You need to have some experience in basic programming concepts and theory. Try to find some introductory
+            information about programming languages.</li>
+
+        </ul>
+
+
+      </article>
+    </section>
+
+    <section class="main-section" id="Python_and_other_languages">
+      <header>Python and other languages</header>
+      <article>
+        <p><b>Java: </b>ython programs are generally expected to run slower than Java programs, but they also take much
+          less time to develop. Python programs are typically 3-5 times shorter than equivalent Java programs. This
+          difference can be attributed to Python's built-in high-level data types and its dynamic typing. or example, a
+          Python programmer wastes no time declaring the types of arguments or variables, and Python's powerful
+          polymorphic list and dictionary types, for which rich syntactic support is built straight into the language,
+          find a use in almost every Python program.</p>
+        <p><b>Javascript: </b>Python's "object-based" subset is roughly equivalent to JavaScript. Like JavaScript (and
+          unlike Java), Python supports a programming style that uses simple functions and variables without engaging in
+          class definitions. However, for JavaScript, that's all there is. Python, on the other hand, supports writing
+          much larger programs and better code reuse through a true object-oriented programming style, where classes and
+          inheritance play an important role.
+        </p>
+
+        <p><b>C++: </b> Almost everything said for Java also applies for C++, just more so: where Python code is
+          typically 3-5 times shorter than equivalent Java code, it is often 5-10 times shorter than equivalent C++
+          code! Anecdotal evidence suggests that one Python programmer can finish in two months what two C++ programmers
+          can't complete in a year. Python shines as a glue language, used to combine components written in C++.
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Hello_world">
+      <header>Hello world</header>
+      <article>
+
+        <p>To write your first Python code first open your IDLE of choice and write this popular "Hello world" code in
+          python: </p>
+
+        <code>
+      print("Hello world!")
+    </code>
+        <p>Then click run and see the result, it's just that easy and straightforward.</p>
+      </article>
+
+    </section>
+
+
+    <section class="main-section" id="Declaring_variables">
+      <header>Declaring variables</header>
+      <article>
+        <p>
+          Variables are containers for storing data values.
+          You do not need to declare variables before using them, or declare their type. Every variable in Python is an
+          object. To declare a variable in Python you need to follow this syntax: variable-name + the symbol "=" +
+          variable value. Here is an example:
+        </p>
+
+        <code>
+      > name = "John" <br>
+      > age = 19
+    </code>
+        <p>If you then print the variable you will see its value.</p>
+
+        <code>
+      > print(name)<br>
+      > John<br>
+      > print(age)<br>
+      > 19
+    </code>
+      </article>
+    </section>
+
+    <section class="main-section" id="Variable_scopes">
+      <header>Variable scopes</header>
+      <article>
+        <p>
+          The part of a program where a variable is accessible is called its scope. There are four major types of
+          variable scope and is the basis for the LEGB rule, meaning: Local, Enclosing, Global and Built-in.
+        </p>
+        <p><b>Local scope: </b>Whenever you define a variable within a function, its scope lies ONLY within the
+          function. It is accessible from the point at which it is defined until the end of the function and exists for
+          as long as the function is executing. Which means its value cannot be changed or even accessed from outside
+          the function. Here's a simple example: </p>
+
+        <code>
+        > def print_number():<br>
+              <div class="indented-text">local_number = 5 <br>
+                print(local_number)<br></div>
+        
+        > print_number()<br>
+        > 5
+      </code>
+
+        <p>The variable "local_number" only exists inside the variable so if we try to print it without invoking the
+          function it will give us an error.</p>
+
+        <p><b>Enclosing Scope: </b>is a special scope that only exists for nested functions. If the local scope is an
+          inner or nested function, then the enclosing scope is the scope of the outer or enclosing function. This scope
+          contains the names that you define in the enclosing function. The names in the enclosing scope are visible
+          from the code of the inner and enclosing functions. Take this as example:
+        </p>
+
+        <code>
+        > def outer(): <br>
+              first_num = 1 <br>
+              def inner(): <br>
+                  second_num = 2<br>
+                  print(second_num)<br>
+        > outer()<br>
+        > 2<br>
+      </code>
+
+        <P>The variable "second_num" cannot be accesed from the "outher()" function because the variable doesn't exist
+          there. However you can acces the variable "first_num" from "inner()" because that variable as already been
+          declared in the upper function. This is an enclosing scope. Outer's variables have a larger scope and can be
+          accessed from the enclosed function inner(). </p>
+
+
+        <p><b>Global scope: </b>This is the easiest scope to understand. Whenever a variable is defined outside any
+          function, it becomes a global variable, and its scope is anywhere within the program. Which means it can be
+          used by any function. For example: </p>
+        <code>
+       > greeting = "Hello" <br>
+       > def say_hi():
+        <div class="indented-text">print(greeting)</div> 
+        > say_hi() <br>
+        > Hello
+      </code>
+
+        <p><b>Built-in scope: </b>This is the widest scope that exists.
+          This scope contains names such as keywords, functions, exceptions, and other attributes that are built into
+          Python. Names in this Python scope are also available from everywhere in your code. It’s automatically loaded
+          by Python when you run a program or script.
+          These are some of the keywords in Python: </p>
+        <code>
+        False<br>
+        None<br>
+        True<br>
+        and<br>
+        break<br>
+        for<br>
+        while<br>
+        with
+      </code>
+
+
+      </article>
+
+    </section>
+
+    <section class="main-section" id="Data_types">
+      <header>Data types</header>
+
+      <article>
+        <p>Python has the following data types built-in by default: </p>
+
+        <ul>
+          <li><b>Text:</b> string. Example: <code> name = "Robert"</code> </li>
+          <li><b>Numeric: </b>integer, float, complex</code>
+            Example: <code>myInt = 3, myFloat  = 3.0, myComplex = 3 +2j </code>
+          </li>
+          <li><b>Sequence: </b>list, tuple. Example: <code>my_list = [1, 2, 3], mytuple = (2, 3, 4).</code></li>
+          <li><b>Mapping: </b>dictionary. Example: <code>my_dict = {"name":"albert", "age":25, "job":"doctor"}</code>
+          </li>
+          <li><b>Set: </b>set, frozenset. Example: <code>my_set = {"banana", "apple", "cherry"}</code></li>
+          <li><b>Boolean: </b>bool. Example: <code>isGood = True</code> </li>
+          <li><b>Binary: </b>bytes, bytearray, memoryview</>. Example: <code>x = bytes(3)</code></li>
+        </ul>
+      </article>
+
+    </section>
+
+    <section class="main-section" id="Function_declaration">
+      <header>Function declaration</header>
+      <article>
+        <p>A function is a block of code wich only runs when it's called, you can pass data, which we call "parameters"
+          into a function. A function can return data as result.</p>
+        <p>
+          In python a function must be defined with the keyword "def", followed by the name of the function, then two
+          parenthesis and finally a colon. Finally indentation is IMPORTANT in Python if we want a block of code to be
+          part of a function we must indent it to the function declaration. Here's an example:
+        </p>
+
+        <code>
+        > def my_function():
+        <div class="indented-text">print("Hello world")</div>
+      </code>
+
+        <p>To call a function and execute it we use the function's name followed by parenthesis:</p>
+        <code>
+            > my_function()<br>
+            > Hello world
+          </code>
+      </article>
+
+    </section>
+
+    <section class="main-section" id="If...elif...else_statements">
+      <header>If...elif...else statements</header>
+      <article>
+        <p>The if control structure "If..." allows a program to execute instructions when a condition is fulfilled. It
+          follows this syntax: if... condtion...execute or not exceute. For example:</p>
+
+        <code>
+      > a = 5<br>
+      > b = 10<br>
+      > if b > a:
+      <div class="indented-text">print("b is greater than a")</div>
+      > b is greater than a 
+      
+    </code>
+
+        <p>
+          The "elif" keyword is pythons way of saying "if the previous conditions were not true, then try this
+          condition". Following the example above lets take a look at this one:
+        </p>
+        <code>
+      > a = 20<br>
+      > b = 10<br>
+      > if b > a:
+      <div class="indented-text">print("b is greater than a")</div>
+      > elif a > b:
+      <div class="indented-text">print("a is greater than b")</div>
+      > a is greater than b
+      </code>
+
+        <p>Note that the first condition is not true so it doesn't get excuted, then it continues with the second
+          condition which is true and it executes it.</p>
+
+        <p>
+          The "else" keyword catches anything which isn't caught by the preceding conditions. Let's take a look:
+
+        </p>
+
+        <code>
+      > a = 50<br>
+      > b = 700<br>
+      > if a > b:
+      <div class="indented-text">print("a is greater than b")</div>
+      > elif a == b:
+      <div class="indented-text">print("a is equal to b")</div>
+      
+      > else:
+      <div class="indented-text">print("a is less than b")</div>
+      > a is less than b
+      
+    </code>
+        <p>In this case neither the first nor the second condition are true, then if both aren't true then the code
+          inside the else statement is excuted.</p>
+      </article>
+
+    </section>
+
+    <section class="main-section" id="For_loops">
+      <header>For loops</header>
+
+      <article>
+        <p>
+          A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a
+          string).</p>
+
+        <p>This is less like the for keyword in other programming languages, and works more like an iterator method as
+          found in other object-orientated programming languages.</p>
+
+        <p>With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc. Here's an
+          example:
+
+        </p>
+
+        <code>
+      > colors = ["blue", "green", "yellow"]<br>
+      > for x in fruits:
+      <div class="indented-text">print(x)</div>
+      > blue<br>
+      > green<br>
+      > yellow
+         
+    </code>
+
+      </article>
+
+    </section>
+
+
+    <section class="main-section" id="While_loops">
+      <header>While loops</header>
+      <article>
+        <p>
+          With the while loop we can execute a set of statements as long as a condition is true. For example:
+        </p>
+
+        <code>
+      > x = 0<br>
+      > while x &lt 6 :
+      <div class="indented-text">print(i)</div>
+      <div class="indented-text">x = x + 1</div>
+      
+      > 0<br>
+      > 1<br>
+      > 2<br>
+      > 3<br>
+      > 4<br>
+      > 5<br>
+      
+    </code>
+
+        <p>In the code above we declare a variable with value 0, then we declare a condition, if x is less than 6 we
+          print x and we add 1 so it change its value, then the code starts again and again untill x is equal to 6 then
+          it stops.</p>
+
+      </article>
+
+
+    </section>
+
+    <section class="main-section" id="References">
+      <header>References</header>
+      <article>
+        <p>All the documentation in this page is taken from: <a href="https://www.python.org/doc/">Python official
+            page</a> and <a href="https://www.w3schools.com/python/">w3schools<a /> Python tutorial.</p>
+      </article>
+    </section>
+
+
+  </main>
+  <!-- partial -->
+
+</body>
+
+</html>
